@@ -25,7 +25,7 @@
 namespace Novutec\MessagePackRpcClient;
 
 /**
- * Exception
+ * TypeErrorException
  *
  * @category   Novutec
  * @package    MessagePackRpcClient

@@ -77,6 +77,7 @@ class Api extends Client
     /**
 	 * Calls parent call() method to send data to the socket and to receive the response
 	 * 
+	 * @throws instance of AbstractException
 	 * @param  string $method
 	 * @param  array $params
 	 * @return mixed

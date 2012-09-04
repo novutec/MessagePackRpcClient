@@ -133,6 +133,7 @@ class Client
     /**
 	 * Creates and initiates a socket connection
 	 * 
+	 * @throws ConnectErrorException
 	 * @return boolean
 	 */
     public function connect()
@@ -159,6 +160,11 @@ class Client
     /**
 	 * Sends data to the socket and receives the response
 	 * 
+	 * @throws WriteErrorException
+	 * @throws ReadErrorException
+	 * @throws ResponseErrorException
+	 * @throws TypeErrorException
+	 * @throws ServerErrorException
 	 * @param  string &$method
 	 * @param  array &$params
 	 * @param  integer &$msgid
