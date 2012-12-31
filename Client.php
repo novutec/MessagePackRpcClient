@@ -242,7 +242,7 @@ class Client
         }
         
         if ($data[2] != '') {
-            throw \Novutec\MessagePackRpcClient\AbstractException::factory('ServerError', 'Got an error from server.');
+            throw \Novutec\MessagePackRpcClient\AbstractException::factory('ServerError', isset($data[2][0])?$data[2][0]:'Got an error from server.');
         }
         
         return $data[3];

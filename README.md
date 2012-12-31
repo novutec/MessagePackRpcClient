@@ -16,17 +16,17 @@ Move the source code to your preferred project folder.
 Usage
 -----
 
-* include Api.php
+* Include Api.php
 ```
 require_once 'MessagePackRpcClient/Api.php';
 ```
 
-* create Api() object
+* Create Api() object
 ```
 $Api = new Novutec\MessagePackRpcClient\Api('tcp://yourhost.com:port');
 ```
 
-* if you want to send something just call the method you need
+* If you want to send something just call the method you need
 ```
 $result = $Parser->your_method($your_parameter1, $your_parameter2);
 ```

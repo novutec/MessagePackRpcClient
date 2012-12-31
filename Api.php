@@ -85,7 +85,16 @@ class Api extends Client
     public function __call($method, $params)
     {
         try {
-            return parent::call($method, $params);
+            $return = parent::call($method, $params);
+            
+            if (is_object($return)) {
+                
+            } else {
+                
+            }
+            
+            return $return;
+            
         } catch (\Novutec\MessagePackRpcClient\AbstractException $e) {
             if ($this->throwExceptions) {
                 throw $e;
