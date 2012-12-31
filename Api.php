@@ -15,7 +15,7 @@
  *
  * @category   Novutec
  * @package    MessagePackRpcClient
- * @copyright  Copyright (c) 2007 - 2012 Novutec Inc. (http://www.novutec.com)
+ * @copyright  Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
  * @license    http://www.apache.org/licenses/LICENSE-2.0
  */
 
@@ -44,7 +44,7 @@ require_once MSGPACK_PATH . '/Exception/AbstractException.php';
  * 
  * @category   Novutec
  * @package    MessagePackRpcClient
- * @copyright  Copyright (c) 2007 - 2012 Novutec Inc. (http://www.novutec.com)
+ * @copyright  Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
  * @license    http://www.apache.org/licenses/LICENSE-2.0
  */
 class Api extends Client

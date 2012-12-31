@@ -3,7 +3,7 @@ Novutec MessagePackRpcClient
 
 Implementation of a MessagePackRpcClient.
 
-Copyright (c) 2007 - 2012 Novutec Inc. (http://www.novutec.com)
+Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
 Licensed under the Apache License, Version 2.0 (the "License").
 
 Installation
@@ -41,7 +41,7 @@ Please report any issues via https://github.com/novutec/MessagePackRpcClient/iss
 
 LICENSE and COPYRIGHT
 -----------------------
-Copyright (c) 2007 - 2012 Novutec Inc. (http://www.novutec.com)
+Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
