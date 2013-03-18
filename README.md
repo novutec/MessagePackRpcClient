@@ -1,7 +1,7 @@
-Novutec MessagePackRpcClient
-============================
+Novutec MessagePack RPC Client
+==============================
 
-Implementation of a MessagePackRpcClient.
+Implementation of a MessagePack RPC Client.
 
 Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
 Licensed under the Apache License, Version 2.0 (the "License").
@@ -31,9 +31,14 @@ $Api = new Novutec\MessagePackRpcClient\Api('tcp://yourhost.com:port');
 $result = $Parser->your_method($your_parameter1, $your_parameter2);
 ```
 
+3rd Party Libraries
+-------------------
+Thanks to developers of following used libraries:
+* msgpack-php: https://github.com/msgpack/msgpack-php
+
 ChangeLog
 ---------
-See ChangeLog at https://github.com/novutec/MessagePackRpcClient/wiki/ChangeLog
+See ChangeLog at https://github.com/novutec/MessagePackRpcClient/blob/master/CHANGELOG.md
 
 Issues
 ------

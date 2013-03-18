@@ -32,7 +32,7 @@ namespace Novutec\MessagePackRpcClient;
  * @copyright  Copyright (c) 2007 - 2013 Novutec Inc. (http://www.novutec.com)
  * @license    http://www.apache.org/licenses/LICENSE-2.0
  * @link       http://msgpack.org/
- * @link       https://github.com/msgpack/msgpack-rpc
+ * @link       https://github.com/msgpack/msgpack-php
  */
 class Client
 {
@@ -194,7 +194,8 @@ class Client
         }
         
         if ($send != strlen($packed_data)) {
-            throw \Novutec\MessagePackRpcClient\AbstractException::factory('WriteError', 'Could not write to the socket. (tried/send): ' . '(' . $send . '/' . strlen($packed_data) . ')');
+            throw \Novutec\MessagePackRpcClient\AbstractException::factory('WriteError', 'Could not write to the socket. (tried/send): ' .
+                     '(' . $send . '/' . strlen($packed_data) . ')');
         }
         
         @stream_set_blocking($this->sock, 0);
@@ -242,7 +243,7 @@ class Client
         }
         
         if ($data[2] != '') {
-            throw \Novutec\MessagePackRpcClient\AbstractException::factory('ServerError', isset($data[2][0])?$data[2][0]:'Got an error from server.');
+            throw \Novutec\MessagePackRpcClient\AbstractException::factory('ServerError', isset($data[2][0]) ? $data[2][0] : 'Got an error from server.');
         }
         
         return $data[3];
@@ -251,7 +252,7 @@ class Client
     /**
 	 * Use MsgPack to serialize
 	 * 
-	 * @see    https://github.com/msgpack/msgpack-rpc
+	 * @see    https://github.com/msgpack/msgpack-php
 	 * @param  array &$data
 	 * @return mixed
 	 */
@@ -263,7 +264,7 @@ class Client
     /**
 	 * Use MsgPack to unserialize
 	 * 
-	 * @see    https://github.com/msgpack/msgpack-rpc
+	 * @see    https://github.com/msgpack/msgpack-php
 	 * @param  string &$data
 	 * @return array
 	 */

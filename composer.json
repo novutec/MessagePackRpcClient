@@ -1,0 +1,10 @@
+{
+    "name": "novutec/MessagePackRpcClient"
+  , "type": "library"
+  , "description": "Implementation of a MessagePack RPC Client."
+  , "keywords": ["msgpack", "rpc", "client", "php"]
+  , "homepage": "https://github.com/novutec/MessagePackRpcClient/"
+  , "author": "Novutec Inc."
+  , "license": "Apache-2.0"
+  , "version": "1.1.1"
+}
